@@ -1,14 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './TaskList.css';
 import ListItem from './ListItem';
 
 const TaskList = ({ tasks }) => {
-  return (
-    <ul>
-      {tasks.map(task => <ListItem key={task.id} task={task} />)}
-    </ul>
-  );
+  return tasks.map(task => <ListItem key={task.id} task={task} />);
 };
 
 TaskList.propTypes = {

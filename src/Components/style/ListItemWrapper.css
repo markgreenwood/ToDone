@@ -1,0 +1,3 @@
+.completed { grid-area: completed; }
+.description { grid-area: description; }
+.duedate { grid-area: duedate; }
