@@ -18268,8 +18268,11 @@ module.exports = camelize;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_tasks__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_tasks___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__data_tasks__);
 
 // import './App.css';
+
 
 function App() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -18279,11 +18282,26 @@ function App() {
       'h1',
       null,
       'Your Tasks'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'ul',
+      null,
+      __WEBPACK_IMPORTED_MODULE_1__data_tasks___default.a.map(task => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'li',
+        { key: task.id },
+        task.description
+      ))
     )
   );
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (App);
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports) {
+
+module.exports = [{"id":"1","description":"Do this","duedate":"","complete":false},{"id":"2","description":"Do that","duedate":"","complete":false},{"id":"3","description":"Save the world","duedate":"","complete":false}]
 
 /***/ })
 /******/ ]);
