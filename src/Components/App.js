@@ -1,14 +1,13 @@
 import React from 'react';
 // import './App.css';
 import tasks from '../data/tasks';
+import TaskList from './TaskList';
 
 function App() {
   return (
     <div>
       <h1>Your Tasks</h1>
-      <ul>
-        {tasks.map(task => <li key={task.id}>{task.description}</li>)}
-      </ul>
+      <TaskList tasks={tasks} />
     </div>
   );
 }
