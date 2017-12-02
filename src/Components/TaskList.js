@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ListItem from './ListItem';
+import TaskListWrapper from './style/TaskListWrapper';
 
 const TaskList = ({ tasks }) => {
-  return tasks.map(task => <ListItem key={task.id} task={task} />);
+  return <TaskListWrapper>{tasks.map(task => <ListItem key={task.id} task={task} />)}</TaskListWrapper>;
 };
 
 TaskList.propTypes = {
