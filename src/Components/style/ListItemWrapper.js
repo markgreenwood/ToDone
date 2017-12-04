@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import './ListItemWrapper.css';
 
-export default styled.div`
+export default styled.li`
   display: grid;
-  grid-template-columns: 5% 80% 15%;
+  grid-template-columns: 5% 60% 35%;
   grid-template-rows: auto;
   grid-template-areas:
     "checkbox description duedate";
-  background-color: cyan;
   max-width: 500px;
 `;

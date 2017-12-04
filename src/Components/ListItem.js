@@ -6,7 +6,7 @@ import moment from 'moment';
 const ListItem = ({ task }) => {
   return (
     <ListItemWrapper>
-      <span><input className="completed" type="checkbox" /></span>
+      <span><input className="completed" type="checkbox" checked={task.complete}/></span>
       <span className="description">{task.description}</span>
       <span className="duedate">{moment(task.duedate).format('l')}</span>
     </ListItemWrapper>
