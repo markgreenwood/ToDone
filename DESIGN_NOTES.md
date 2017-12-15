@@ -12,3 +12,13 @@ Tasks should contain context info:
 - Area of Focus
 - Goal
 - Location ("@Context" in GTD)
+
+## Table component
+
+Table should handle:
+- Headings
+- Data rows/items
+- Pagination
+- Sorting
+- Filtering
+- Expand/collapse row details
