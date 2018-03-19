@@ -1,5 +1,4 @@
 import React from 'react';
-// import './App.css';
 import tasks from '../data/tasks';
 import TaskList from './TaskList';
 import AddTask from './AddTask';
