@@ -1,8 +1,9 @@
 import React from 'react';
 import AddTaskWrapper from './style/AddTaskWrapper';
+import TaskForm from './TaskForm';
 
 const AddTask = () => {
-  return <AddTaskWrapper>Add Task form goes here</AddTaskWrapper>;
+  return <AddTaskWrapper><TaskForm/></AddTaskWrapper>;
 };
 
 export default AddTask;
